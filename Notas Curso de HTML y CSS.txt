@@ -1,0 +1,523 @@
+Comprendamos Internet
+
+	Internet es un conjunto descentralizado de redes de comunicación interconectadas, en otras palabras, son dos (o más) computadoras que se conectan entre sí. Los Protocolos son un conjunto de reglas que hacen posible la comunicación entre diferentes elementos que forman parte de un sistema.
+
+	La World Wide Web es un sistema de distribución de documentos (de hipertexto o hipermedia) interconectados y accesibles vía internet, mientras que, los Hipertextos son textos que contienen enlaces a otros textos.
+
+	FTP es el protocolo de transferencia de archivos entre sistemas conectados a una red, así es cómo diferentes personas podemos compartir documentos entre nosotros.
+
+	Hay algunas computadoras que solo utilizamos para entregar documentos los conocemos como servidores, en cambio, las computadoras que solo leen y reciben estos documentos los conocemos como clientes. También existe el protocolo de comunicación P2P (Peer to Peer) donde una misma computadora trabaja como servidor y cliente al mismo tiempo.
+
+	La tecnología de la la información es la aplicación de ordenadores y equipos de telecomunicación para almacenar, recuperar, transmitir y manipular datos, con frecuencia, utilizado en el contexto de negocios o empresas.
+
+	La Comunicación Síncrona es comunicación en tiempo real, por ejemplo, en aplicaciones de mensajería y video-chat. Sin embargo, también existe la Comunicación Asíncrona, comunicación en tiempo NO real, así funciona Gmail, puede pasar que recibamos un nuevo correo pero no lo leemos inmediatamente lo envían, por eso es comunicación asíncrona.
+	
+Etiquetas y sus atributos
+
+	Las Etiquetas son fragmentos de texto rodeados por corchetes angulares (< y >) con funciones y usos específicos:
+
+	<html>Contenido</html>
+	Los Atributos afectan a los elementos por su presencia o enriquecen la definición de la misma. Por ejemplo, el atributo lang en la etiqueta html indica que el contenido de esta página esta en un idioma específico:
+
+	<html lang=""es"">Contenido en Español</html>
+	Las etiquetas meta (meta tags) son etiquetas que se incorporan en el encabezado de una página web y son invisibles para los usuarios normales, sin embargo, son de gran utilidad para navegadores u otros programas que pueden valerse de esta información:
+
+	<head>
+			<meta name=""description"" content=""Descripción de nuestra página"">
+	</head>
+	También encontramos etiquetas comunes como <footer> para agrupar el contenido del pie de página, <span> para guardar texto genérico y sin reglas de espaciado o tamaño predeterminadas, <img src=""imagen-url.png""> para incluir imágenes, entre otras.
+	
+Diferencia atributo y propiedad:
+
+	Atributos son de html: class, style, src etc
+	Propiedades son de CSS: color, jutify-content etc
+	
+¿Cómo funciona CSS?
+
+	El CSS son las hojas de estilo en cascada que definen la apariencia de nuestros documentos en HTML.
+
+	Para que nuestros estilos CSS se apliquen correctamente a nuestras páginas web, debemos utilizar la etiqueta link con el atributo href y la ruta a nuestro archivo .css:
+
+	<html>
+			<head>
+					<link rel=""stylesheet"" href=""estilos.css"">
+			</head>
+			<body>
+					... etc ... etc....
+			</body>
+	</html>
+	Los Selectores nos permiten conectar las etiquetas de HTML con sus respectivos estilos en CSS.
+
+	Existen muchos tipos de selectores, por ejemplo, los selectores de clase buscan el contenido que tenga un cierto valor en su atributo class:
+
+	CSS (con punto antes del nombre de la clase):
+	.caja { color: red; }
+
+	HTML:
+	<div class=""caja"">Contenido</div>
+	También tenemos selectores de tipo ID (estos selectores solo pueden aplicar a un elemento, no va a funcionar si escribimos dos o más etiquetas con el mismo ID):
+
+	CSS (con `#` antes del nombre del ID):
+	#caja { color: red; }
+
+	HTML:
+	<div id=""caja"">Contenido</div>
+	En CSS utilizamos atributos para definir los estilos de nuestros elementos, podemos modificar el color de la letra, tamaño, color de fondo, espaciado, entre otras:
+
+	.caja {
+			color: red;
+			background: yellow;
+			font-size: 10px;
+			padding: 20px;
+	}
+	
+Javascript tiene acceso directo al DOM que es mucho mas que la estructura jerarquica de html.
+
+Capta muchas mas caracteristicas que lo que se ve en tags etc. 
+
+Mucha interactividad del navegador.
+
+¿Cómo funciona JavaScript?
+
+	JavaScript es un lenguaje de programación que nos permite realizar actividades complejas en nuestras páginas web: almacenar valores en variables o realizar operaciones.
+
+	Para incluir JavaScript en nuestro HTML debemos utilizar la etiqueta script:
+
+	<html>
+		<head>
+			<script src=""script.js"">
+			</script>
+		</head>
+	</html>
+	
+Listado de las etiquetas más usadas
+
+	<!doctype html>
+	Define que el documento está bajo el estándar de HTML.
+
+	<head>
+	Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.
+
+	<title>
+	Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.
+
+	<base>
+	Define la URL base para las URLs relativas en la página.
+
+	<link>
+	Usada para enlazar JavaScript y CSS externos con el documento HTML actual.
+
+	<meta>
+	Define los metadatos que no pueden ser definidos usando otro elemento HTML.
+
+	<style>
+	Etiqueta de estilo usada para escribir CSS en línea.
+
+	<body>
+	Representa el contenido principal de un documento HTML. Solo hay un elemento <body> en un documento.
+
+	<section>
+	Define una sección en un documento.
+
+	<nav>
+	Define una sección que solamente contiene enlaces de navegación
+
+	<article>
+	Define contenido autónomo que podría existir independientemente del resto del contenido.
+
+	<aside>
+	Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido
+
+	<h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+	Los elemento de cabecera implementan seis niveles de cabeceras de documentos; <h1> es la de mayor jerarquía y <h6> es la de menor importancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.
+
+	<header>
+	Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.
+
+	<footer>
+	Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.
+
+	<address>
+	Define una sección que contiene información de contacto.
+
+	<main>
+	Define el contenido principal o importante en el documento. Solamente existe un elemento <main> en el documento.
+
+	<form>
+	Representa un formulario, con atributos de controles que puede ser enviado a un servidor para procesamiento.
+
+	<img>
+	Representa una imagen.
+
+	<iframe>
+	Representa un contexto anidado de navegación, es decir, un documento HTML embebido.
+
+	<a>
+	Representa un hiperenlace, enlazando a otro recurso.
+
+	<em>
+	Representa un texto enfatizado, como un acento de intensidad.
+
+	<strong>
+	Representa un texto especialmente importante .
+
+	<small>
+	Representa un comentario aparte, es decir, textos secundarios como un descargo de responsabilidad o una nota de derechos de autoría, que no son esenciales para la comprensión del documento.
+
+	Fuente: https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos
+	
+PaperWireFrame
+
+	Boceto de paginas, distribuciones, links
+	
+	No deberia llevar mas de 10min
+	
+	(Genial para la spectre)
+	
+Usamos 
+
+	XD de Adobe
+
+	Adobe Creative Cloud
+	
+En html si empezas a escribir ".claspepe" y das enter te genera un div con class="clasepepe"
+
+En el nav hacemos varios divs: logo, lista de menu
+
+Tenemos div con ul y lis para las opciones de menus.
+
+Dentro de cada li hacemos un a href para que sean links.
+
+Para que cada item de la lista del menu cambie de color al pasar el cursor por encima:
+
+	nav li a: hover{
+		color: white;
+	}
+	
+Si pones padding con porcentajes te lo deja centrado.
+
+Metemos las imagenes en divs y hacemos que sus divs tengan margen negativo para sobresalir el contenedor de esos divs.
+
+Con box-shadow pones sombreado al div. En el inspector de chrome te da un editor en vivo que te ayuda.
+
+	box-shadow: 0 0 1px red.  Es 0 de x, 0 de y.
+	
+En un display flex al meter mas padding hace que los elementos se acomoden automaticamente en ancho salvo que digas nowrap.
+
+Para darle a un button el efecto de mano para link: 
+	atributo cursor: pointer;
+	
+Para elegir color para :hover podes ir al inspector y variar el color de background a mano para elegir cual te gusta.
+
+
+
+
+Fuentes personalizadas y variables de CSS:
+
+	Las Variables de CSS nos permiten centralizar los valores repetitivos por todo nuestro CSS, vamos a utilizar estas funcionalidades para ahorrarnos mucho si queremos cambiar el valor de algún color o tamaño de nuestra página.
+
+	También vamos a utilizar fuentes personalizadas, para esto debemos ir a Google Fonts y elegir la que mejor se acomode a nuestro diseño, en este caso es la fuente Open Sans.
+
+	De fonts de google:
+
+		https://fonts.google.com/specimen/Open+Sans?query=open+sans&sidebar.open&selection.family=Open+Sans:wght@300
+		
+		Bajas como @import para css: 
+		
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+			</style>
+		
+	Extraemos valores utilizados en varios lados de css:
+
+		Variables CSS:
+				
+			/* -------------Variables */
+			:root{
+			--green-color:#7ACC2D;
+			--white-color:white;
+			--black-color:#313337;
+			/* Tipografía */
+			--normal:12px;
+			/* Espaciado */
+			--space:10px;
+			/* Box shadow */
+			--box:0px 0 2px 1px #e6e5e9;
+			}
+
+			/* -------------Variables */
+			
+		luego abajo utilizamos:
+			
+		  background-color: var(--green-color);
+		  color: var(--white-color);
+		  color: var(--black-color);
+		  font-size: var(--normal);
+		  padding: var(--space);
+		  box-shadow: var(--box);
+		  
+		Por mas que sean valores de uso unico hasta el momento o valores ya conocidos tipo "white", es mejor centralizarlos asi si queres cambiar 
+		levemente tu "blanco" lo cambias una vez para todos.
+	
+MediaQueries
+
+	Media query is a CSS technique introduced in CSS3.
+
+	It uses the @media rule to include a block of CSS properties only if a certain condition is true.
+	
+	En un archivo mobile.css ponemos:
+	
+	@media (max-width: 600px) {
+	
+		aca todos los estilos que queres cuando se cumpla la condición
+	
+	}
+
+Animaciones y transiciones
+
+	Las animaciones nos permiten cambiar los estilos de nuestros elementos durante un tiempo. Para esto debemos configurar nuestra animación con algunos estilos iniciales y finales para aplicarla a alguno de nuestros selectores de CSS:
+
+	@keyframe fadeIn {
+			from {
+					opacity: 0;
+			}
+			to {
+					opacity: 1;
+			}
+	}
+
+	.fadeIn {
+			animation-name: fadeIn;
+			animation-duration: 4s;
+			animation-fill-mode: 4s;
+	}
+	No olvides repetir los atributos de animación o transiciones utilizando el prefijo -webkit-:
+
+	.fadeIn {
+			animation-name: fadeIn;
+			-webkit-animation-name: fadeIn;
+			animation-duration: 4s;
+			-webkit-animation-duration: 4s;
+			animation-fill-mode: 4s;
+			-webkit-animation-fill-mode: 4s;
+	}
+		
+	.fadeIn{
+	  -webkit-animation-duration: 4s;
+	  animation-duration: 4s;
+	  animation-fill-mode: both;
+	  -webkit-animation-fill-mode: both;
+	  -webkit-animation-name: fadeIn;
+	  animation-name: fadeIn;
+	}
+
+	@keyframes fadeIn {
+	  from{
+		opacity: 0;
+	  }
+	  to{
+		opacity: 1;
+	  }
+	}
+
+	.fadeInDown{
+	  -webkit-animation-duration: 1s;
+	  animation-duration: 1s;
+	  animation-fill-mode: both;
+	  -webkit-animation-fill-mode: both;
+	  -webkit-animation-name: fadeInDown;
+	  animation-name: fadeInDown;
+	}
+
+	@keyframes fadeInDown {
+	  from{
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0);
+	  }
+	  to{
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	  }
+	}
+
+	.fadeInUp{
+	  -webkit-animation-duration: 1s;
+	  animation-duration: 1s;
+	  animation-fill-mode: both;
+	  -webkit-animation-fill-mode: both;
+	  -webkit-animation-name: fadeInUp;
+	  animation-name: fadeInUp;
+	}
+
+	@keyframes fadeInUp {
+	  from{
+		opacity: 0;
+		-webkit-transform: translate3d(0,100%,0);
+		transform: translate3d(0,100%,0);
+	  }
+	  to{
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	  }
+	}
+	
+KeyFrames:
+
+	La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una secuencia de animación CSS mediante el 
+	establecimiento de keyframes (o puntos de trayectoria) a lo largo de la secuencia de animación que debe ser alcanzado por determinados 
+	puntos durante la animación. Esto le da un control más específico sobre los pasos intermedios de la secuencia de animación que se 
+	obtiene al dejar que el navegador maneje todo automáticamente.
+	
+text-align:justify te espacia palabras para que ocupen todo el ancho.
+
+
+
+Formularios:
+
+	Action: 
+		Este atributo de la etiqueta <form> nos permite establecer el lugar o URL donde los datos de los usuarios deben ser enviados una 
+		vez ellos terminen de llenar el formulario.
+		
+	Name: 
+		Este atributo de las etiquetas <input> nos permite que los datos que los usuarios hayan escrito se envíen correctamente cuando han 
+		terminado de llenar el formulario. El valor de esta etiqueta debe indicar el nombre con el cual queremos almacenar o interactuar con 
+		esta información en el futuro.
+	
+	Type: 
+		El atributo type=”submit” le permite a los usuarios indicar que han terminado de llenar el formulario y lo pueden enviar para almacenar 
+		la información. También podemos usar este atributo en inputs para que estos pasen a tener el rol de botón de envío del formulario.
+			
+			
+	<form action=”URL_DONDE_QUIERO_ENVIAR_LO_DATOS”>
+	  <label for=”nombre”>Nombre:</label>
+	  <input type=”text” id=”nombre” name=”user_name” />
+
+	  <label for=“edad“>Edad:</label>
+	  <input type=”number” id=”edad” name=”user_age” />
+
+	  <button type=”submit”>Enviar mis datos</button>
+	</form>
+	
+	Cuando damos submit, los valores de los inputs viajan a la URL destino del action con query params:
+	
+		?user_name=JUAN&user_age=123
+		
+	Hay dos formas de hacer que los labels te enlacen a su input al hacerles click:
+			
+		<label>
+		Nombre:
+		<input type=”text” />
+		</label>
+
+		<label>
+		Edad:
+		<input type=”number” />
+		</label>
+		
+		ó
+		
+	- Añadimos el atributo id en la etiqueta input y le damos un valor, recuerda que el valor de nuestros IDs deben ser únicos e irrepetibles 
+	para evitar problemas en nuestra página web.
+	
+	- Añadimos el atributo for en la etiqueta label con el valor del id del input que queremos enlazar.
+	
+		<label for=”nombre”>Nombre:</label>
+		<input type=”text” id=”nombre” />
+
+		<label for=”edad”>Edad:</label>
+		<input type=”number” id=”edad” />
+		
+	Los labels no son como otras etiquetas que solo guardan y muestran el texto con los diferentes estilos que definamos en el CSS. 
+	Los labels están especialmente preparados y optimizados para que nuestros formularios funcionen correctamente.
+	
+	En Mobile te ayudan a darle click al input.
+	
+Sistema de Grillas
+		
+	Replicamos las col de bootstrap defiiendo clases con % de widths
+
+	Podes hacer alineaciones con porcentajes de width o padding
+
+	.col-1 {
+			width: 8.3333333333%;
+	}
+	.col-2 {
+			width: 16.6666666666%;
+	}
+	.col-3 {
+			width: 24.9999999999%;
+	}
+	...
+	
+Para hacerlo responsive le cambiamos el display a block cuando es menor a cierto ancho.
+
+Con la combinacion max-width y margin auto haces que queden centrados con unos bordes a los lados.
+
+Ese max-width lo dejamos en pixels para que no se vaya por las nubes en pantallas grandes.
+
+Cada seccion la vamos haciendo con div container para que mentenga el margen al costado de pantalla.
+
+Por lo gral las imgs van dentro de un div propio. En ese div podes centrar con margin:auto habiendole puesto un maximo de ancho en pixeles a la img.
+
+Para separar los divs arriba y abajo poder usar varios <br>
+
+Botones
+
+	se puede hacer con <a> <button> o <input> al ponerle type= submit te cambia el estilo a un boton.
+	
+En gral cuando pones ancho en porcentaje, al aclarar box-sizing: border-box solo tiene en cuenta el espacio restante dentro sin contar padding ni nada mas.
+
+Para cambiar el nombre del boton definido con input type=submit: atributo value.
+
+Anidamiento de clases:
+
+	<div class="testimonials content">stuff</div>
+	
+	.testimonials.content { css here }
+	
+	Para definir atributos para clases que estan en tags dentro de otra clase:
+	
+	.testimonials .wrapper .content { css here }
+	
+TODOS LOS ATRIBUTOS SE HEREDAN SALVO MARGIN, PADDING, BORDER.
+
+Creamos cuenta de PayPal de negocios para recibir pagos.
+
+
+
+Configuración del botón de pago con Paypal
+
+	El botón de pago es una herramienta de PayPal que ayuda a configurar la cantidad y el método de pago para que nuestro usuarios paguen por nuestros productos o servicios de forma fácil y rápida.
+
+	Cuando configuremos nuestro botón, vamos a copiar la URL que generamos con PayPal y la vamos a pegar en el atributo action de nuestro formulario, además debemos añadir el atributo method=""POST"" para que nuestro formulario funcione correctamente.
+	
+	En Paypal registramos como vendedores, generamos link de pago que ponemos en el action del form. Aclarar method post.
+	
+	Cuando den click se van a mandar por query params los valores de nuestros inputs.
+		
+	Toda la documentación de la función de autollenado la encuentras en este enlace:
+	https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/formbasics/#auto-fill-forms-with-html-variables
+
+	Y las variables que pueden enviar para el auto llenado del formulario son :
+	https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/#paypal-checkout-page-variables
+
+	Al poner en los inputs nombres (query params) esperados por Paypal, va a cargar con la misma data la pantalla del pago asi no escribe dos veces el user.
+	
+
+100vh es el tamaño completo de la pantalla.
+
+Con text-align: center centras imagenes y textos dentro de su div.
+
+Los button para servir como links tienen que estar dentro de form.
+
+Para ponerles href a botones tenes que hacerlo si o si metiendo el boton dentro de un <a href>
+
+Para abrir correo: <a href="mailto:contacto@brand.com">Emil</a>
+
+Hay una appa github desktop que te permite graficamente crear repo, commitear etc
+
+En Paypal definis URLs en caso de falla o exito.
+
